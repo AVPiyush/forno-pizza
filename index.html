@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>🍕</text></svg>">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Forno — Artisan Pizza</title>
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="css/hero.css">
+</head>
+<body>
+
+  <!-- ── NAVBAR ──────────────────────────────────────────────── -->
+  <nav class="navbar">
+    <a href="index.html" class="navbar-logo">Forno<span>°</span></a>
+    <ul class="navbar-nav">
+      <li>
+        <a href="index.html" class="nav-link">
+          <svg width="14" height="14" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
+            <path stroke-linecap="round" stroke-linejoin="round" d="M3 12l2-2m0 0l7-7 7 7M5 10v10a1 1 0 001 1h3m10-11l2 2m-2-2v10a1 1 0 01-1 1h-3m-6 0a1 1 0 001-1v-4a1 1 0 011-1h2a1 1 0 011 1v4a1 1 0 001 1m-6 0h6"/>
+          </svg>
+          <span>Home</span>
+        </a>
+      </li>
+      <li>
+        <a href="menu.html?cat=veg" class="nav-link">
+          <span class="nav-dot veg"></span>
+          <span>Veg</span>
+        </a>
+      </li>
+      <li>
+        <a href="menu.html?cat=nonveg" class="nav-link">
+          <span class="nav-dot nonveg"></span>
+          <span>Non-Veg</span>
+        </a>
+      </li>
+      <li>
+        <a href="menu.html?cat=deals" class="nav-link">
+          <span>🔥</span>
+          <span>Hot Deals</span>
+        </a>
+      </li>
+      <li>
+        <a href="cart.html" class="nav-link nav-cart">
+          <svg width="16" height="16" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
+            <path stroke-linecap="round" stroke-linejoin="round" d="M3 3h2l.4 2M7 13h10l4-8H5.4M7 13l-1.4 7h12.8M7 13L5.4 5M17 21a1 1 0 100-2 1 1 0 000 2zm-10 0a1 1 0 100-2 1 1 0 000 2z"/>
+          </svg>
+          <span>Cart</span>
+          <span class="cart-badge">0</span>
+        </a>
+      </li>
+      <li>
+        <a href="#" class="nav-link nav-profile" title="Profile">
+          <svg width="16" height="16" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
+            <path stroke-linecap="round" stroke-linejoin="round" d="M16 7a4 4 0 11-8 0 4 4 0 018 0zM12 14a7 7 0 00-7 7h14a7 7 0 00-7-7z"/>
+          </svg>
+        </a>
+      </li>
+    </ul>
+  </nav>
+
+  <!-- ── HERO ────────────────────────────────────────────────── -->
+  <section class="hero">
+    <div class="hero-glow"></div>
+
+    <div class="pizza-stage" aria-hidden="true">
+      <div class="pizza-ring" id="pizzaRing">
+        <img src="https://images.unsplash.com/photo-1574071318508-1cdbab80d002?w=900&q=85" alt="Artisan pizza top view">
+      </div>
+    </div>
+
+    <div class="hero-content">
+      <p class="hero-eyebrow">Neapolitan Wood-Fired</p>
+      <h1 class="hero-title">
+        <span class="line1">Crafted With</span>
+        <span class="line2">Fire & Soul</span>
+      </h1>
+      <p class="hero-sub">
+        Slow-fermented dough, hand-crushed tomatoes, the finest mozzarella.
+        Every pizza a love letter to Naples.
+      </p>
+      <div class="hero-ctas">
+        <a href="menu.html?cat=veg" class="btn-primary">
+          <svg width="16" height="16" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2.5">
+            <path stroke-linecap="round" stroke-linejoin="round" d="M9 5l7 7-7 7"/>
+          </svg>
+          Explore Menu
+        </a>
+        <a href="menu.html?cat=deals" class="btn-secondary">
+          🔥 Today's Deals
+        </a>
+      </div>
+    </div>
+
+    <div class="hero-stats">
+      <div class="stat-item">
+        <span class="stat-num">48h</span>
+        <span class="stat-label">Fermented Dough</span>
+      </div>
+      <div class="stat-divider"></div>
+      <div class="stat-item">
+        <span class="stat-num">900°</span>
+        <span class="stat-label">Wood Fire</span>
+      </div>
+      <div class="stat-divider"></div>
+      <div class="stat-item">
+        <span class="stat-num">12+</span>
+        <span class="stat-label">Signatures</span>
+      </div>
+      <div class="stat-divider"></div>
+      <div class="stat-item">
+        <span class="stat-num">4.9★</span>
+        <span class="stat-label">Avg Rating</span>
+      </div>
+    </div>
+  </section>
+
+  <!-- ── ABOUT STRIP ──────────────────────────────────────────── -->
+  <section class="about-strip">
+    <div class="about-cell">
+      <div class="about-icon">🌾</div>
+      <div>
+        <h3>Cold-Fermented Crust</h3>
+        <p>48 hours in the cold. The dough develops deep flavor, perfect char, and the most satisfying chew.</p>
+      </div>
+    </div>
+    <div class="about-cell">
+      <div class="about-icon">🍅</div>
+      <div>
+        <h3>San Marzano Tomatoes</h3>
+        <p>Grown in the volcanic soil of Mount Vesuvius. Sweet, low-acid, deeply complex. No shortcuts.</p>
+      </div>
+    </div>
+    <div class="about-cell">
+      <div class="about-icon">🔥</div>
+      <div>
+        <h3>Wood-Fired at 900°F</h3>
+        <p>A 90-second bake creates that iconic leopard char — caramelized edges you can't fake.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- ── FEATURED PIZZAS ─────────────────────────────────────── -->
+  <section class="featured-section">
+    <p class="section-label">Our Signatures</p>
+    <h2 class="section-title">Most Loved Pies</h2>
+    <div class="featured-grid" id="featuredGrid"></div>
+    <br><br>
+    <a href="menu.html?cat=veg" class="btn-secondary" style="margin-right:12px">See All Veg →</a>
+    <a href="menu.html?cat=nonveg" class="btn-secondary">See All Non-Veg →</a>
+  </section>
+
+  <footer class="footer-strip">
+    © 2025 <span>Forno°</span> — Artisan Pizza. Made with <span>♥</span> and fire.
+  </footer>
+
+  <script src="js/data.js"></script>
+  <script src="js/cart.js"></script>
+  <script>
+    const picks = [PIZZAS.nonveg[2], PIZZAS.veg[1], PIZZAS.nonveg[0]];
+    const grid = document.getElementById('featuredGrid');
+    picks.forEach(p => {
+      grid.innerHTML += `
+        <a href="menu.html?cat=${p.id.startsWith('n') ? 'nonveg' : 'veg'}" class="featured-card">
+          <img class="featured-img" src="${p.image}" alt="${p.name}" loading="lazy">
+          <div class="featured-info">
+            <div class="featured-name">${p.name}</div>
+            <div class="featured-tag">${p.tagline}</div>
+            <div class="featured-price">${formatINR(p.basePrice)}</div>
+          </div>
+        </a>`;
+    });
+  </script>
+</body>
+</html>
